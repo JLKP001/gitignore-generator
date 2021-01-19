@@ -3,7 +3,7 @@ import { AppBar, makeStyles, Toolbar, Typography } from "@material-ui/core";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
 
 const useStyles = makeStyles((theme) => ({
-  icon: { paddingRight: theme.spacing(2) },
+  icon: { marginRight: theme.spacing(2) },
   title: { textTransform: "capitalize" },
 }));
 

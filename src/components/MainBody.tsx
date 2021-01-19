@@ -7,9 +7,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     marginLeft: "auto",
     marginRight: "auto",
+    marginTop: theme.spacing(5),
     width: "60%",
     textAlign: "center",
-    height: "80%",
   },
   title: {
     textTransform: "capitalize",
