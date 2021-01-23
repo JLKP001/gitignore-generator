@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/gitignore-generator/static/css/main.2c2a740e.chunk.css",
-    "main.js": "/gitignore-generator/static/js/main.cfbe117a.chunk.js",
-    "main.js.map": "/gitignore-generator/static/js/main.cfbe117a.chunk.js.map",
-    "runtime-main.js": "/gitignore-generator/static/js/runtime-main.6883dc16.js",
-    "runtime-main.js.map": "/gitignore-generator/static/js/runtime-main.6883dc16.js.map",
+    "main.js": "/gitignore-generator/static/js/main.cfde21d5.chunk.js",
+    "main.js.map": "/gitignore-generator/static/js/main.cfde21d5.chunk.js.map",
+    "runtime-main.js": "/gitignore-generator/static/js/runtime-main.5d7f27ad.js",
+    "runtime-main.js.map": "/gitignore-generator/static/js/runtime-main.5d7f27ad.js.map",
     "static/css/2.ee195fde.chunk.css": "/gitignore-generator/static/css/2.ee195fde.chunk.css",
-    "static/js/2.de9e5087.chunk.js": "/gitignore-generator/static/js/2.de9e5087.chunk.js",
-    "static/js/2.de9e5087.chunk.js.map": "/gitignore-generator/static/js/2.de9e5087.chunk.js.map",
-    "static/js/3.5eaccc2c.chunk.js": "/gitignore-generator/static/js/3.5eaccc2c.chunk.js",
-    "static/js/3.5eaccc2c.chunk.js.map": "/gitignore-generator/static/js/3.5eaccc2c.chunk.js.map",
+    "static/js/2.4119eed2.chunk.js": "/gitignore-generator/static/js/2.4119eed2.chunk.js",
+    "static/js/2.4119eed2.chunk.js.map": "/gitignore-generator/static/js/2.4119eed2.chunk.js.map",
+    "static/js/3.cb6c6966.chunk.js": "/gitignore-generator/static/js/3.cb6c6966.chunk.js",
+    "static/js/3.cb6c6966.chunk.js.map": "/gitignore-generator/static/js/3.cb6c6966.chunk.js.map",
     "index.html": "/gitignore-generator/index.html",
     "static/css/2.ee195fde.chunk.css.map": "/gitignore-generator/static/css/2.ee195fde.chunk.css.map",
     "static/css/main.2c2a740e.chunk.css.map": "/gitignore-generator/static/css/main.2c2a740e.chunk.css.map",
-    "static/js/2.de9e5087.chunk.js.LICENSE.txt": "/gitignore-generator/static/js/2.de9e5087.chunk.js.LICENSE.txt",
+    "static/js/2.4119eed2.chunk.js.LICENSE.txt": "/gitignore-generator/static/js/2.4119eed2.chunk.js.LICENSE.txt",
     "static/media/index.css": "/gitignore-generator/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.6883dc16.js",
+    "static/js/runtime-main.5d7f27ad.js",
     "static/css/2.ee195fde.chunk.css",
-    "static/js/2.de9e5087.chunk.js",
+    "static/js/2.4119eed2.chunk.js",
     "static/css/main.2c2a740e.chunk.css",
-    "static/js/main.cfbe117a.chunk.js"
+    "static/js/main.cfde21d5.chunk.js"
   ]
 }
