@@ -12,7 +12,13 @@ import rust_data from "./rust";
 
 // Templates obtained from https://github.com/github/gitignore
 
-export const initialTemplates = [
+export type TemplateType = {
+  name: string;
+  data: string;
+  checked: boolean;
+};
+
+export const initialTemplates: Array<TemplateType> = [
   { name: "c", data: c_data, checked: false },
   { name: "cmake", data: cmake_data, checked: false },
   { name: "c++", data: cpp_data, checked: false },

@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const useStyles = makeStyles((theme) => ({
   root: { display: "inline-block" },

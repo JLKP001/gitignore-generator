@@ -13,7 +13,7 @@ export const Header = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <LibraryBooksIcon className={classes.icon} />
+        <LibraryBooksIcon className={classes.icon} data-testid="icon" />
         <Typography variant="h6" className={classes.title}>
           gitignore generator
         </Typography>
