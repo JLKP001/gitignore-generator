@@ -3,6 +3,7 @@ import { makeStyles, Paper, Typography } from "@material-ui/core";
 
 import { TemplateForm } from "./TemplateForm";
 import { OutputDialog } from "./OutputDialog";
+import { MessageBar } from "./MessageBar";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,6 +28,8 @@ export const MainBody = () => {
   const classes = useStyles();
   const [output, setOutput] = useState("");
   const [openDialog, setOpenDialog] = useState(false);
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [snackbarMsg, setSnackbarMsg] = useState("");
 
   const handleOpenDialog = () => {
     setOpenDialog(true);
@@ -34,6 +37,15 @@ export const MainBody = () => {
 
   const handleCloseDialog = () => {
     setOpenDialog(false);
+  };
+
+  const handleOpenSnackbar = (message: string) => {
+    setOpenSnackbar(true);
+    setSnackbarMsg(message);
+  };
+
+  const handleCloseSnackbar = () => {
+    setOpenSnackbar(false);
   };
 
   return (
@@ -55,6 +67,12 @@ export const MainBody = () => {
         handleClose={handleCloseDialog}
         open={openDialog}
         output={output}
+        handleOpenSnackbar={handleOpenSnackbar}
+      />
+      <MessageBar
+        openSnackbar={openSnackbar}
+        handleCloseSnackbar={handleCloseSnackbar}
+        snackbarMsg={snackbarMsg}
       />
     </>
   );

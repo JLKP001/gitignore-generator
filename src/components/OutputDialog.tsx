@@ -28,17 +28,20 @@ interface OutputDialogProps {
   handleClose: () => void;
   open: boolean;
   output: string;
+  handleOpenSnackbar: (message: string) => void;
 }
 
 export const OutputDialog = ({
   handleClose,
   open,
   output,
+  handleOpenSnackbar,
 }: OutputDialogProps) => {
   const classes = useStyles();
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(output);
+    handleOpenSnackbar("Copied to clipboard successfully!");
   };
 
   return (
