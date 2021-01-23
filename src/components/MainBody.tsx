@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles, Paper, Typography } from "@material-ui/core";
 
 import { TemplateForm } from "./TemplateForm";
+import { OutputDialog } from "./OutputDialog";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,16 +25,37 @@ const useStyles = makeStyles((theme) => ({
 
 export const MainBody = () => {
   const classes = useStyles();
+  const [output, setOutput] = useState("");
+  const [openDialog, setOpenDialog] = useState(false);
+
+  const handleOpenDialog = () => {
+    setOpenDialog(true);
+  };
+
+  const handleCloseDialog = () => {
+    setOpenDialog(false);
+  };
 
   return (
-    <Paper variant="outlined" className={classes.root}>
-      <Typography variant="h4" className={classes.title}>
-        select templates
-      </Typography>
-      <Typography variant="subtitle1" className={classes.subTitle}>
-        choose files to ignore from a list of templates
-      </Typography>
-      <TemplateForm />
-    </Paper>
+    <>
+      <Paper variant="outlined" className={classes.root}>
+        <Typography variant="h4" className={classes.title}>
+          select templates
+        </Typography>
+        <Typography variant="subtitle1" className={classes.subTitle}>
+          choose files to ignore from a list of templates
+        </Typography>
+        <TemplateForm
+          output={output}
+          setOutput={setOutput}
+          openDialog={handleOpenDialog}
+        />
+      </Paper>
+      <OutputDialog
+        handleClose={handleCloseDialog}
+        open={openDialog}
+        output={output}
+      />
+    </>
   );
 };

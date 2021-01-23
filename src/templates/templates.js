@@ -1,29 +1,12 @@
+import c_data from "./c";
+import cpp_data from "./cpp";
+import python_data from "./python";
+import labview_data from "./labview";
+
 export const initialTemplates = [
+  { name: "c", data: c_data, checked: false },
+  { name: "c++", data: cpp_data, checked: false },
   { name: "altium", data: "Some data", checked: false },
-  { name: "python", data: "some other data", checked: false },
-  { name: "labview", data: "even more data", checked: false },
-  { name: "altium1", data: "Some data", checked: false },
-  { name: "python2", data: "some other data", checked: false },
-  { name: "labview3", data: "even more data", checked: false },
-  { name: "altium4", data: "Some data", checked: false },
-  { name: "python5", data: "some other data", checked: false },
-  { name: "labview6", data: "even more data", checked: false },
-  { name: "altium7", data: "Some data", checked: false },
-  { name: "python8", data: "some other data", checked: false },
-  { name: "labview9", data: "even more data", checked: false },
-  // { name: "altium10", data: "Some data", checked: false },
-  // { name: "python11", data: "some other data", checked: false },
-  // { name: "labview12", data: "even more data", checked: false },
-  // { name: "altium13", data: "Some data", checked: false },
-  // { name: "python14", data: "some other data", checked: false },
-  // { name: "labview15", data: "even more data", checked: false },
-  // { name: "altium16", data: "Some data", checked: false },
-  // { name: "python17", data: "some other data", checked: false },
-  // { name: "labview18", data: "even more data", checked: false },
-  // { name: "altium19", data: "Some data", checked: false },
-  { name: "python20", data: "some other data", checked: false },
-  { name: "labview21", data: "even more data", checked: false },
-  { name: "altium22", data: "Some data", checked: false },
-  { name: "python23", data: "some other data", checked: false },
-  { name: "labview24", data: "even more data", checked: false },
+  { name: "python", data: python_data, checked: false },
+  { name: "labview", data: labview_data, checked: false },
 ];

@@ -19,7 +19,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const TemplateForm = () => {
+interface TemplateFormProps {
+  output: string;
+  setOutput: (value: string) => void;
+  openDialog: () => void;
+}
+
+export const TemplateForm = ({
+  output,
+  setOutput,
+  openDialog,
+}: TemplateFormProps) => {
   const classes = useStyles();
   const [templates, setTemplates] = useState(initialTemplates);
 
@@ -33,7 +43,18 @@ export const TemplateForm = () => {
       }
     });
 
+    const newOutput = newTemplates
+      .map((template) => {
+        if (template.checked) {
+          return template.data;
+        }
+        return null;
+      })
+      .filter((item) => item)
+      .join("\n");
+
     setTemplates(newTemplates);
+    setOutput(newOutput);
   };
 
   return (
@@ -54,8 +75,14 @@ export const TemplateForm = () => {
           </ListItem>
         ))}
       </List>
-      <Button variant="contained" color="primary" className={classes.button}>
-        generate!
+      <Button
+        variant="contained"
+        color="primary"
+        className={classes.button}
+        onClick={openDialog}
+        disabled={output ? false : true}
+      >
+        show gitignore!
       </Button>
     </div>
   );
