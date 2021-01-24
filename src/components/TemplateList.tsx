@@ -16,7 +16,11 @@ export const TemplateList = ({
   return (
     <List component="div">
       {templates.map((template) => (
-        <TemplateListItem template={template} handleChange={handleChange} />
+        <TemplateListItem
+          key={template.name}
+          template={template}
+          handleChange={handleChange}
+        />
       ))}
     </List>
   );
