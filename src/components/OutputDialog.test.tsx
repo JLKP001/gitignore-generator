@@ -20,8 +20,8 @@ test("test if OutputDialog rendered correctly", () => {
   const output = screen.getByText(/test_data/i);
   expect(output).toBeInTheDocument();
 
-  const copy_button = screen.getByText(/copy to clipboard/i);
-  expect(copy_button).toBeInTheDocument();
+  const copyButton = screen.getByRole("button", { name: /copy to clipboard/i });
+  expect(copyButton).toBeInTheDocument();
 
   const buttons = screen.getAllByRole("button");
   expect(buttons).toHaveLength(2);
